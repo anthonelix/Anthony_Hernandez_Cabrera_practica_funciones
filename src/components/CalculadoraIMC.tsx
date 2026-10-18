@@ -1,11 +1,9 @@
 // CalculadoraIMC.tsx
-// Calcula el índice de masa corporal
 export const CalculadoraIMC = () => {
   const calcularIMC = (peso: number, altura: number): number => {
     return peso / (altura * altura);
   };
 
-  // Clasifica el IMC según el rango de peso
   const clasificarIMC = (imc: number): string => {
     if (imc < 18.5) return "Bajo peso";
     if (imc < 25) return "Normal";

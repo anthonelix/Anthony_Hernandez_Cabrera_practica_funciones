@@ -5,9 +5,9 @@ import { ValidadorEdad } from './components/ValidadorEdad';
 import { AnalizadorTexto } from './components/AnalizadorTexto';
 import { EstadisticasArreglo } from './components/EstadisticasArreglo';
 import { GeneradorPassword } from './components/GeneradorPassword';
-// import { AplicadorDescuentos } from './components/AplicadorDescuentos';
-// import { SistemaCalificaciones } from './components/SistemaCalificaciones';
-// import { CarritoCompras } from './components/CarritoCompras';
+import { AplicadorDescuentos } from './components/AplicadorDescuentos';
+import { SistemaCalificaciones } from './components/SistemaCalificaciones';
+import { CarritoCompras } from './components/CarritoCompras';
  
 function App() {
   return (
@@ -27,11 +27,11 @@ function App() {
       <hr />
       <GeneradorPassword />
       <hr />
-      {/* <AplicadorDescuentos />
+      <AplicadorDescuentos />
       <hr />
       <SistemaCalificaciones />
       <hr />
-      <CarritoCompras /> */}
+      <CarritoCompras />
     </div>
   );
 }
