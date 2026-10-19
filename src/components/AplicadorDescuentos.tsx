@@ -20,12 +20,12 @@ export const AplicadorDescuentos = () => {
   const precio = 1000;
 
   return (
-    <>
-      <h3>Aplicador de Descuentos</h3>
-      <p>Precio original: ${precio}</p>
-      <p>Con 10% off: ${aplicarDescuento(precio, descuento10)}</p>
-      <p>Con 25% off: ${aplicarDescuento(precio, descuento25)}</p>
-      <p>Descuento estudiante: ${aplicarDescuento(precio, descuentoEstudiante)}</p>
-    </>
+    <div className="my-4">
+      <h3 className="text-xl font-bold mb-2">Aplicador de Descuentos</h3>
+      <p className="text-gray-700">Precio original: ${precio}</p>
+      <p className="text-gray-700">Con 10% off: ${aplicarDescuento(precio, descuento10)}</p>
+      <p className="text-gray-700">Con 25% off: ${aplicarDescuento(precio, descuento25)}</p>
+      <p className="text-gray-700">Descuento estudiante: ${aplicarDescuento(precio, descuentoEstudiante)}</p>
+    </div>
   );
 };

@@ -13,10 +13,10 @@ export const ConversorTemperatura = () => {
     const temperatura = 25;
 
     return (
-        <>
-            <h3>Conversor</h3>
-            <p>{temperatura}°C = {celsiusAFahrenheit(temperatura)}°F</p>
-            <p>100°F = {fahrenheitACelsius(100).toFixed(2)}°C</p>
-        </>
+        <div className="my-4">
+            <h3 className="text-xl font-bold mb-2">Conversor de Temperatura</h3>
+            <p className="text-gray-700">{temperatura}°C = {celsiusAFahrenheit(temperatura)}°F</p>
+            <p className="text-gray-700">100°F = {fahrenheitACelsius(100).toFixed(2)}°C</p>
+        </div>
     );
 };

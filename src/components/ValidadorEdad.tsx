@@ -16,13 +16,13 @@ export const ValidadorEdad = () => {
   const edades = [15, 18, 25, 12];
 
   return (
-    <>
-      <h3>Validador de Edad</h3>
+    <div className="my-4">
+      <h3 className="text-xl font-bold mb-2">Validador de Edad</h3>
       {edades.map((edad, i) => (
-        <p key={i}>
+        <p key={i} className="text-gray-700">
           Edad {edad}: {obtenerMensaje(edad)}
         </p>
       ))}
-    </>
+    </div>
   );
 };

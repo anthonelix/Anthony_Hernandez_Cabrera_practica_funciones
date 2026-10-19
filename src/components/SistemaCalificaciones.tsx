@@ -33,19 +33,19 @@ export const SistemaCalificaciones = () => {
   ];
 
   return (
-    <>
-      <h3>Sistema de Calificaciones</h3>
+    <div className="my-4">
+      <h3 className="text-xl font-bold mb-2">Sistema de Calificaciones</h3>
       {alumnos.map((alumno) => {
         const promedio = calcularPromedio(alumno.califs);
         const letra = obtenerLetra(promedio);
         const aprobado = estaAprobado(promedio);
 
         return (
-          <p key={alumno.nombre}>
+          <p key={alumno.nombre} className="text-gray-700">
             {alumno.nombre}: Promedio {promedio.toFixed(1)} - Letra {letra} - {aprobado ? "Aprobado" : "Reprobado"}
           </p>
         );
       })}
-    </>
+    </div>
   );
 };

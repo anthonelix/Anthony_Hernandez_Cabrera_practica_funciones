@@ -28,12 +28,12 @@ export const EstadisticasArreglo = () => {
   const numeros = [8, 3, 15, 7, 22, 11, 4];
 
   return (
-    <>
-      <h3>Estadísticas</h3>
-      <p>Números: [{numeros.join(', ')}]</p>
-      <p>Promedio: {calcularPromedio(numeros).toFixed(2)}</p>
-      <p>Máximo: {encontrarMaximo(numeros)}</p>
-      <p>Mínimo: {encontrarMinimo(numeros)}</p>
-    </>
+    <div className="my-4">
+      <h3 className="text-xl font-bold mb-2">Estadísticas</h3>
+      <p className="text-gray-700">Números: [{numeros.join(', ')}]</p>
+      <p className="text-gray-700">Promedio: {calcularPromedio(numeros).toFixed(2)}</p>
+      <p className="text-gray-700">Máximo: {encontrarMaximo(numeros)}</p>
+      <p className="text-gray-700">Mínimo: {encontrarMinimo(numeros)}</p>
+    </div>
   );
 };

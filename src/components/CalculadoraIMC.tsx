@@ -16,11 +16,11 @@ export const CalculadoraIMC = () => {
   const imc = calcularIMC(peso, altura);
 
   return (
-    <>
-      <h3>Calculadora de IMC</h3>
-      <p>Peso: {peso} kg | Altura: {altura} m</p>
-      <p>IMC: {imc.toFixed(2)}</p>
-      <p>Clasificación: <strong>{clasificarIMC(imc)}</strong></p>
-    </>
+    <div className="my-4">
+      <h3 className="text-xl font-bold mb-2">Calculadora de IMC</h3>
+      <p className="text-gray-700">Peso: {peso} kg | Altura: {altura} m</p>
+      <p className="text-gray-700">IMC: {imc.toFixed(2)}</p>
+      <p className="text-gray-700">Clasificación: <strong>{clasificarIMC(imc)}</strong></p>
+    </div>
   );
 };

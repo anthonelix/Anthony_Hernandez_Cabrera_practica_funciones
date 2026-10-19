@@ -26,12 +26,12 @@ export const AnalizadorTexto = () => {
   const texto = "Hola mundo desde TypeScript";
 
   return (
-    <>
-      <h3>Analizador de Texto</h3>
-      <p>Texto: "{texto}"</p>
-      <p>Palabras: {contarPalabras(texto)}</p>
-      <p>Vocales: {contarVocales(texto)}</p>
-      <p>Invertido: {invertirTexto(texto)}</p>
-    </>
+    <div className="my-4">
+      <h3 className="text-xl font-bold mb-2">Analizador de Texto</h3>
+      <p className="text-gray-700">Texto: "{texto}"</p>
+      <p className="text-gray-700">Palabras: {contarPalabras(texto)}</p>
+      <p className="text-gray-700">Vocales: {contarVocales(texto)}</p>
+      <p className="text-gray-700">Invertido: {invertirTexto(texto)}</p>
+    </div>
   );
 };

@@ -33,22 +33,22 @@ export const CarritoCompras = () => {
   );
 
   return (
-    <>
-      <h3>Carrito de Compras</h3>
+    <div className="my-4">
+      <h3 className="text-xl font-bold mb-2">Carrito de Compras</h3>
       {carrito.map((item) => {
         const subtotalItem = calcularSubtotal(item.precio, item.cantidad);
         return (
-          <p key={item.producto}>
+          <p key={item.producto} className="text-gray-700">
             {item.producto} x{item.cantidad} = {formatearPrecio(subtotalItem)}
           </p>
         );
       })}
       <hr />
-      <p>Subtotal: {formatearPrecio(subtotal)}</p>
-      <p>IVA (16%): {formatearPrecio(calcularIVA(subtotal))}</p>
-      <p>
+      <p className="text-gray-700">Subtotal: {formatearPrecio(subtotal)}</p>
+      <p className="text-gray-700">IVA (16%): {formatearPrecio(calcularIVA(subtotal))}</p>
+      <p className="text-gray-700">
         <strong>Total: {formatearPrecio(calcularTotal(subtotal))}</strong>
       </p>
-    </>
+    </div>
   );
 };

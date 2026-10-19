@@ -30,11 +30,11 @@ export const GeneradorPassword = () => {
   };
 
   return (
-    <>
-      <h3>Generador de Contraseñas</h3>
-      <p>Básica (8): {generarPassword(8, false, false)}</p>
-      <p>Media (12): {generarPassword(12, true, false)}</p>
-      <p>Fuerte (16): {generarPassword(16, true, true)}</p>
-    </>
+    <div className="my-4">
+      <h3 className="text-xl font-bold mb-2">Generador de Contraseñas</h3>
+      <p className="text-gray-700">Básica (8): {generarPassword(8, false, false)}</p>
+      <p className="text-gray-700">Media (12): {generarPassword(12, true, false)}</p>
+      <p className="text-gray-700">Fuerte (16): {generarPassword(16, true, true)}</p>
+    </div>
   );
 };
